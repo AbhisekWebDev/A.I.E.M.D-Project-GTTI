@@ -1,0 +1,18 @@
+image hover transition
+
+*****image edit***** - mostly done
+
+image disease descriptions and preventions with (infographics)
+(All of the them will be in a seperate section with one side having images and the other side with some descriptions about it)
+
+table border design and hover effect (if possible) - done
+
+RAPID API implementation (HEALTHWISE API)
+
+PHP LOGIN PAGE & FEEDBACK PAGE
+
+SERVICES PAGE
+
+ADD FOOTER
+
+TEAM MEMBERS DETAILS CARD WITH HOVER EFFECT (TRANSFORM, TRANSITION, COLOR SHIFT FROM LEFT TO RIGHT)

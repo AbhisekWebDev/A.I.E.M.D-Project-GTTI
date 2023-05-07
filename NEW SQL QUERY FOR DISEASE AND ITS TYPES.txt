@@ -1,0 +1,6 @@
+SELECT DISTINCT diseases.name, disease_type.DISEASE_TYPE, symptoms.name
+FROM diseases 
+LEFT JOIN disease_type ON disease_type.DISEASE_ID = diseases.id
+JOIN disease_symptom ON disease_symptom.disease_id = diseases.id
+JOIN symptoms ON symptoms.id = disease_symptom.symptom_id
+WHERE symptoms.name = 'coughing blood';

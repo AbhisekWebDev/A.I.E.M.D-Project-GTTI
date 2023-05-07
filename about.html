@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    
+
+    <style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,900&family=Ubuntu:wght@300&display=swap');
+
+
+
+
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+        
+.card-image{
+    position: relative;
+    height: 170px;
+    width: 150px;
+    border-radius: 50%;
+    background: #751c1c;
+    padding: 10 px;
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: var(--border);
+}
+
+.about{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color:rgb(0, 145, 255); */
+}
+
+.card{
+    width: 320px;
+    border-radius: 25px;
+    background-color: #ffffff;
+}
+
+.slide-content{
+    margin: 0 40px;
+}
+
+.image-content, .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+
+.name{
+    font-size: 18px;
+    color: var(--green);
+    text-align: center;
+}
+
+.description{
+    font-size: 14px;
+    color: var(--green);
+    text-align: center;
+    border-radius: 10px;
+    background-color: #bfc4c8;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 50%;
+    width: 100%;
+    background-color: rgb(94, 152, 152);
+    border-radius: 25px 25px 0 25px;
+}
+
+.slider-container{
+    max-width: 1120px;
+    width: 100%;
+    background-color: grey;
+    padding: 40px;
+}
+
+html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background-image: url(ai1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      padding-top: 150px;
+      padding-bottom: 120px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+    h1{
+      text-align: center;
+    }
+    </style>
+</head>
+<body>
+  <h1>List Of The Team Members Of This Project & Their Contributions</h1>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="image-content">
+                <span class="overlay"></span>
+    
+                <div class="card-image">
+                    <img src="Formal.jpg" alt="" class="card-img">
+                </div>
+    
+                <div class="card-content">
+                   <h2 class="name">Abhisek Kumar</h2>
+                   <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quisquam totam repellendus excepturi asperiores! Mollitia dolore ad optio sit repellat molestias reiciendis non, dolorum dignissimos numquam repellendus nam sint eaque?</p> 
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="image-content">
+                <span class="overlay"></span>
+    
+                <div class="card-image">
+                    <img src="Formal.jpg" alt="" class="card-img">
+                </div>
+    
+                <div class="card-content">
+                   <h2 class="name">Abhisek Kumar</h2>
+                   <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quisquam totam repellendus excepturi asperiores! Mollitia dolore ad optio sit repellat molestias reiciendis non, dolorum dignissimos numquam repellendus nam sint eaque?</p> 
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="image-content">
+                <span class="overlay"></span>
+    
+                <div class="card-image">
+                    <img src="Formal.jpg" alt="" class="card-img">
+                </div>
+    
+                <div class="card-content">
+                   <h2 class="name">Abhisek Kumar</h2>
+                   <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quisquam totam repellendus excepturi asperiores! Mollitia dolore ad optio sit repellat molestias reiciendis non, dolorum dignissimos numquam repellendus nam sint eaque?</p> 
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="image-content">
+                <span class="overlay"></span>
+    
+                <div class="card-image">
+                    <img src="Formal.jpg" alt="" class="card-img">
+                </div>
+    
+                <div class="card-content">
+                   <h2 class="name">Abhisek Kumar</h2>
+                   <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quisquam totam repellendus excepturi asperiores! Mollitia dolore ad optio sit repellat molestias reiciendis non, dolorum dignissimos numquam repellendus nam sint eaque?</p> 
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="image-content">
+                <span class="overlay"></span>
+    
+                <div class="card-image">
+                    <img src="Formal.jpg" alt="" class="card-img">
+                </div>
+    
+                <div class="card-content">
+                   <h2 class="name">Abhisek Kumar</h2>
+                   <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quisquam totam repellendus excepturi asperiores! Mollitia dolore ad optio sit repellat molestias reiciendis non, dolorum dignissimos numquam repellendus nam sint eaque?</p> 
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="image-content">
+                <span class="overlay"></span>
+    
+                <div class="card-image">
+                    <img src="Formal.jpg" alt="" class="card-img">
+                </div>
+    
+                <div class="card-content">
+                   <h2 class="name">Abhisek Kumar</h2>
+                   <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quisquam totam repellendus excepturi asperiores! Mollitia dolore ad optio sit repellat molestias reiciendis non, dolorum dignissimos numquam repellendus nam sint eaque?</p> 
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="image-content">
+                <span class="overlay"></span>
+    
+                <div class="card-image">
+                    <img src="Formal.jpg" alt="" class="card-img">
+                </div>
+    
+                <div class="card-content">
+                   <h2 class="name">Abhisek Kumar</h2>
+                   <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quisquam totam repellendus excepturi asperiores! Mollitia dolore ad optio sit repellat molestias reiciendis non, dolorum dignissimos numquam repellendus nam sint eaque?</p> 
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="image-content">
+                <span class="overlay"></span>
+    
+                <div class="card-image">
+                    <img src="Formal.jpg" alt="" class="card-img">
+                </div>
+    
+                <div class="card-content">
+                   <h2 class="name">Abhisek Kumar</h2>
+                   <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quisquam totam repellendus excepturi asperiores! Mollitia dolore ad optio sit repellat molestias reiciendis non, dolorum dignissimos numquam repellendus nam sint eaque?</p> 
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="image-content">
+                <span class="overlay"></span>
+    
+                <div class="card-image">
+                    <img src="Formal.jpg" alt="" class="card-img">
+                </div>
+    
+                <div class="card-content">
+                   <h2 class="name">Abhisek Kumar</h2>
+                   <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quisquam totam repellendus excepturi asperiores! Mollitia dolore ad optio sit repellat molestias reiciendis non, dolorum dignissimos numquam repellendus nam sint eaque?</p> 
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      </script>
+</body>
+</html>

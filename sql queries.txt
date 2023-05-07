@@ -1,0 +1,4 @@
+SELECT diseases.name, diseases.type, diseases.cause FROM diseases
+          INNER JOIN disease_symptom ON diseases.id = disease_symptom.disease_id
+          INNER JOIN symptoms ON symptoms.id = disease_symptom.symptom_id
+          WHERE symptoms.name IN ("pain", "cramps");

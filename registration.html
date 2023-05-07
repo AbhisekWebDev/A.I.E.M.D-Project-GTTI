@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register here</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="form">
+    <div class="registration">
+        <header>medical registration</header>
+
+        <form action="registration.php" method="post">
+            <div class="details">
+                <div class="personal">
+                    <span class="title">personal details</span>
+
+                    <div class="fields">
+                        <div class="inputs">
+                            <label for="">name</label>
+                            <input type="text" placeholder="enter your name" name="name" required>
+                        </div>
+                        <div class="inputs">
+                            <label for="">date of birth</label>
+                            <input type="date" placeholder="enter your age" name="dob" required>
+                        </div>
+                        <div class="inputs">
+                            <label for="">gender</label>
+                            <select name="gender" id="gender" name="gender" name="gender" >
+                                <option value="">--gender--</option>
+                                <option value="male">male</option>
+                                <option value="female">female</option>
+                            </select>
+                        </div>
+                        <div class="inputs">
+                            <label for="">email</label>
+                            <input type="text" placeholder="enter your email" name="email" required>
+                        </div>
+                        <div class="inputs">
+                            <label for="">address</label>
+                            <input type="text" placeholder="enter your address" name="address" required>
+                        </div>
+                        <div class="inputs">
+                            <label for="">phone</label>
+                            <input type="text" placeholder="enter your phone no." name="phone" required>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="personal">
+                    <span class="title">medical details</span>
+
+                    <div class="fields">
+                        <div class="inputs">
+                            <label for="">medical conditions</label>
+                            <input type="text" placeholder="conditions (if any)" name="mc" >
+                        </div>
+                        <div class="inputs">
+                            <label for="">medication details</label>
+                            <input type="text" placeholder="specify (if any)" name="md" >
+                        </div>
+                        <div class="inputs">
+                            <label for="">surgery history</label>
+                            <select name="surgery" id="surgery" name="surgery" name="sh" >
+                                <option value="">--choose--</option>
+                                <option value="yes">yes</option>
+                                <option value="no">no</option>
+                            </select>
+                        </div>
+                        <div class="inputs">
+                            <label for="">blood pressure</label>
+                            <input type="text" placeholder="ex. 120/80" name="bp" required>
+                        </div>
+                        <div class="inputs">
+                            <label for="">height</label>
+                            <input type="text" placeholder="height in cms." name="height" required>
+                        </div>
+                        <div class="inputs">
+                            <label for="">weight</label>
+                            <input type="text" placeholder="weight in kg." name="weight" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="personal">
+                        <span class="title">symptom details</span>
+                        <br>
+                        <h5>tick the symptoms mentioned below:</h5>
+
+                        <div class="fields">
+                            <div class="inputs">
+                                <input type="checkbox" name="symp" id="">Fever
+                                <input type="checkbox" name="symp" id="">chest pain
+                                <input type="checkbox" name="symp" id="">pain in neck
+                                <input type="checkbox" name="symp" id="">weakness
+                                <input type="checkbox" name="symp" id="">fainting
+                                <input type="checkbox" name="symp" id="">irregular heartbeat
+                                <input type="checkbox" name="symp" id="">nausia
+                                <input type="checkbox" name="symp" id="">vomitting blood
+                                <input type="checkbox" name="symp" id="">headache
+                                <input type="checkbox" name="symp" id="">shortness of breath
+                            </div>
+
+                            <div class="inputs">
+                                <input type="checkbox" name="symp" id="">coughing blood
+                                <input type="checkbox" name="symp" id="">heartburn
+                                <input type="checkbox" name="symp" id="">bleeding
+                                <input type="checkbox" name="symp" id="">swelling
+                                <input type="checkbox" name="symp" id="">pain
+                                <input type="checkbox" name="symp" id="">fatigue
+                                <input type="checkbox" name="symp" id="">spasm
+                                <input type="checkbox" name="symp" id="">vomitting
+                                <input type="checkbox" name="symp" id="">bloody stool
+                                <input type="checkbox" name="symp" id="">abdominal pain
+                            </div>
+
+                            <div class="inputs">
+                                <input type="checkbox" name="symp" id="">loss appatite
+                                <input type="checkbox" name="symp" id="">digestive disorder
+                                <input type="checkbox" name="symp" id="">throat pain
+                                <input type="checkbox" name="symp" id="">sensitivity to light
+                                <input type="checkbox" name="symp" id="">mood disorders
+                                <input type="checkbox" name="symp" id="">itching
+                                <input type="checkbox" name="symp" id="">redness
+                                <input type="checkbox" name="symp" id="">rash
+                                <input type="checkbox" name="symp" id="">pus
+                                <input type="checkbox" name="symp" id="">joint pain
+                            </div>
+
+                            <div class="inputs">
+                                <input type="checkbox" name="symp" id="">yellow skin
+                                <input type="checkbox" name="symp" id="">yellow urine
+                                <input type="checkbox" name="symp" id="">yellow eyes
+                                <input type="checkbox" name="symp" id="">frequent urination
+                                <input type="checkbox" name="symp" id="">less to no urination
+                                <input type="checkbox" name="symp" id="">foamy urine
+                                <input type="checkbox" name="symp" id="">sleep disorderinsomnia
+                                <input type="checkbox" name="symp" id="">sleep apnea
+                                <input type="checkbox" name="symp" id="">hemophilia
+                                <input type="checkbox" name="symp" id="">coughing
+                            </div>
+
+                            <div class="inputs">
+                                <input type="checkbox" name="symp" id="">excess mucus
+                                <input type="checkbox" name="symp" id="">allergic reaction
+                                <input type="checkbox" name="symp" id="">hay fever
+                                <input type="checkbox" name="symp" id="">sore thorat
+                                <input type="checkbox" name="symp" id="">itchy thorat
+                                <input type="checkbox" name="symp" id="">vertigo
+                                <input type="checkbox" name="symp" id="">fainting
+                                <input type="checkbox" name="symp" id="">tremors
+                                <input type="checkbox" name="symp" id="">spasm
+                                <input type="checkbox" name="symp" id="">constipation
+                            </div>
+
+                            <div class="inputs">
+                                <input type="checkbox" name="symp" id="">bloating
+                                <input type="checkbox" name="symp" id="">indigestion
+                                <input type="checkbox" name="symp" id="">diaherria
+                                <input type="checkbox" name="symp" id="">dehydration
+                                <input type="checkbox" name="symp" id="">teary eyes
+                                <input type="checkbox" name="symp" id="">dry eyes
+                                <input type="checkbox" name="symp" id="">itchy eyes
+                                <input type="checkbox" name="symp" id="">night blindness
+                                <input type="checkbox" name="symp" id="">numbness
+                                <input type="checkbox" name="symp" id="">tingling
+                            </div>
+
+                            <div class="inputs">
+                                <input type="checkbox" name="symp" id="">burning sensation
+                                <input type="checkbox" name="symp" id="">paralysis
+                                <input type="checkbox" name="symp" id="">weak gripping
+                                <input type="checkbox" name="symp" id="">dry skin
+                                <input type="checkbox" name="symp" id="">discoloration
+                                <input type="checkbox" name="symp" id="">spots
+                                <input type="checkbox" name="symp" id="">sensetivity
+                                <input type="checkbox" name="symp" id="">truble chewing
+                                <input type="checkbox" name="symp" id="">weak gums
+                                <input type="checkbox" name="symp" id="">blood in urine
+                            </div>
+
+                            <div class="inputs">
+                                <input type="checkbox" name="symp" id="">weight loss
+                                <input type="checkbox" name="symp" id="">weight gain
+                                <input type="checkbox" name="symp" id="">fractures
+                                <input type="checkbox" name="symp" id="">sprains
+                                <input type="checkbox" name="symp" id="">back pain
+                                <input type="checkbox" name="symp" id="">neck pain
+                                <input type="checkbox" name="symp" id="">infection
+                                <input type="checkbox" name="symp" id="">ear pain
+                                <input type="checkbox" name="symp" id="">itchy ears
+                                <input type="checkbox" name="symp" id="">bleeding gums
+                            </div>
+
+                            <div class="inputs">
+                                <input type="checkbox" name="symp" id="">excessive sweating
+                                <input type="checkbox" name="symp" id="">cloudy urine
+                                <input type="checkbox" name="symp" id="">hearing problems
+                                <input type="checkbox" name="symp" id="">nasal discharge
+                                <input type="checkbox" name="symp" id="">toothache
+                                <input type="checkbox" name="symp" id="">belching
+                                <input type="checkbox" name="symp" id="">hallucinations
+                                <input type="checkbox" name="symp" id="">pelvic pain
+                                <input type="checkbox" name="symp" id="">anxiety
+                                <input type="checkbox" name="symp" id="">irritations
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="next">
+                        <span class="btntext">submit </span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+
+

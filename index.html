@@ -12,26 +12,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+
+    <link rel="stylesheet" href="all.css">
+
+    <link rel="stylesheet" href="all.min.css">
+
+    <link rel="stylesheet" href="fontawesome.css">
 
     <!-- my css link -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- header secion -->
+    <!-- <audio autoplay id="my-audio">
+        <source src="welcome to ai.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio> -->
+
+
+    <!-- header secion starts-->
     <header class="header">
         <a href="#" class="logo"><i class="fas fa-heartbeat"></i>A.I embedded medical diagnosis</a>
 
         <nav class="navbar">
             <a href="#home">Home</a>
             <a href="#services">Services</a>
-            <a href="#diagnosis">Diagnosis</a>
-            <a href="#feedback">Feedback</a>
+            <a href="#footer">find us</a>
+            <a href="http://localhost/registration.php">register</a>
+            <a href="http://localhost/disease_array5.php" data-toggle = "tooltip" title = "For The Registered Patients Only">Check Disease</a>
+            <!-- <a href="http://localhost/disease3.php">Diagnosis</a> -->
+            
+
         </nav>
 
         <div id="menu-btn" class="fas fa-bars"></div>
     </header>
-    <!-- header end -->
+    <!-- header section ends -->
 
 
     <!-- home section starts -->
@@ -39,16 +56,21 @@
         <div class="video">
             <h3>welcome to the medical diagnostics, an A.I powered symptom checker</h3>
             <br>
-            <video controls autoplay loop>
-                <source src="videoplayback.mp4" type="video/ogg">
+            <video controls autoplay loop muted id="my-video">
+                <source src="videoplayback.mp4" type="video/mp4">
             </video>
         </div>
         <div class="content">
             <h3>stay safe & stay healthy</h3>
-            <p>diagnosis - The process of identifying a disease, condition, or injury from its signs and symptoms. A health history, physical exam, and tests, such as blood tests, imaging tests, and biopsies, may be used to help make a diagnosis.
+            <p> <i>diagnosis</i>   - The process of identifying a disease, condition, or injury from its signs and symptoms. 
                 <br>
                 <br>
-                <b> here we will help you to diagnose your symptoms based on the A.I Technology. </b>
+                <b>a guide on how to use the A.I Embedded medical diagnosis</b>
+                <br>
+                <p>to use Our diagnosis system, you must first register yourself on our website. Then we will provide you a registration ID, with that ID you can access the list of symptoms and choose from it. after submitting your symptoms, return to the main page and then click on "check disease" (for the registered patients only) from the navbar, put your registered ID and find your disease. <br> <br> yes it's that simple! </p>
+                <br>
+                <br>
+                <h5 style="font-size: x-large; color: #777;"><b>we will help you to diagnose your symptoms based on the A.I Technology.</b></h5>  
             </p>
             <p>to know more</p>
             <a href="table.html" class="btn">click here<span class="fas fa-chevron-right"></span></a>
@@ -57,7 +79,7 @@
     <!-- home section ends -->
 
 
-    <!-- servises section starts -->
+    <!-- services section starts -->
     <sectiom class="services" id="services">
         <h4 class="heading">our <span>services</span></h4>
 
@@ -71,28 +93,62 @@
                 <i class="fas fa-brain"></i>
                 <h3>we are here for you 24/7 with A.I</h3>
             </div>
+
+            <div class="box">
+                <i class="fas fa-user-md"></i>
+                <h3>specialist doctors</h3>
+            </div>
         </div>
     </sectiom>
-    <!-- servises section ends -->
+    <!-- services section ends -->
+
 
 
     <!-- footer section starts -->
-    
+    <section class="footer" id="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>follow us on</h3>
+                <a href="#"> <i class="fab fa-facebook"></i> facebook</a>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter</a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram</a>
+                <a href="#"> <i class="fab fa-linkedin"></i> linkedin</a>
+                <a href="#"> <i class="fab fa-patreon"></i> patreon</a>
+                <a href="#"> <i class="fab fa-github"></i> github</a>
+                <a href="#"> <i class="fab fa-youtube"></i> youtube</a>
+            </div>
+
+            <div class="box">
+                <h3>contact us </h3>
+                <a href="#"> <i class="fas fa-phone"></i> 123-456-7890</a>
+                <a href="#"> <i class="fas fa-phone"></i> 111-222-0000</a>
+                <a href="#"> <i class="fas fa-envelope"></i> xyz.123@gmail.com</a>
+                <a href="#"> <i class="fas fa-envelope"></i> abc.123@gmail.com</a>
+                <a href="#"> <i class="fas fa-envelope"></i> ai_embedded_MD.123@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <h3>location </h3>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> george telegraph, sealdah, kolkata, 700000</a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> gurgaon, fa st. chawk, delhi, 122009</a>
+            </div>
+        </div>
+    </section>
     <!-- footer section ends -->
 
 
-   
+    <div id="google_translate_element" style="width: 100px;"></div>
 
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+}
 
+</script>
 
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-
-
-
-
-
-
-
+    
     <!-- my js link -->
     <script src="script.js"></script>
 </body>
